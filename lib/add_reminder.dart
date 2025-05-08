@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:greengath/noti_service.dart';
 import 'package:greengath/reminder_list.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'reminder_model.dart';
@@ -45,6 +46,16 @@ class _AddReminderPageState extends State<AddReminderPage> {
     remindersJson.add(reminderMap);
 
     await prefs.setStringList('reminders', remindersJson);
+    print(reminder.time.hour);
+    NotiService().scheduleNotification(
+      id: reminder.id,
+      title: "Green Path",
+      body: "Don't forget to water your ${reminder.title}",
+      hour: reminder.time.hour,
+      minute: reminder.time.minute,
+      isDaily: reminder.isDaily,
+      repeatDays: reminder.repeatDays,
+      );
   }
 
   // Get selected days based on user's input
@@ -65,6 +76,7 @@ class _AddReminderPageState extends State<AddReminderPage> {
       _isSaving = true;
 
       final reminder = Reminder(
+        id: DateTime.now().millisecondsSinceEpoch % (2^31 - 1),
         title: _titleController.text,
         time: _selectedTime,
         isDaily: _isDaily,

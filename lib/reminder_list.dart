@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:greengath/add_reminder.dart';
+import 'package:greengath/noti_service.dart';
 import 'package:greengath/reminder_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,12 +34,20 @@ class _ReminderListPageState extends State<ReminderListPage> {
   }
 
   Future<void> deleteReminder(int index) async {
+  final reminderId = _reminders[index].id; // Get the correct ID
+  await NotiService().notificationsPlugin.cancel(reminderId); // Cancel the notification
+
   final prefs = await SharedPreferences.getInstance();
-  _reminders.removeAt(index);
+
+  _reminders.removeAt(index); // Remove from list
+
+  // Update saved list
   final remindersJson = _reminders.map((r) => jsonEncode(r.toMap())).toList();
   await prefs.setStringList('reminders', remindersJson);
-  setState(() {});
+
+  setState(() {}); // Refresh the UI
 }
+
   // Get the repeat days text to display
   String _getFrequencyText(Reminder reminder) {
     if (reminder.isDaily) return 'Daily';

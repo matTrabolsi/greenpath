@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:greengath/add_reminder.dart';
 import 'package:greengath/disease_detection.dart';
-import 'package:greengath/noti_service.dart';
 import 'package:greengath/reminder_list.dart';
 import 'package:greengath/type_detection.dart';
 import 'package:image_picker/image_picker.dart';
@@ -151,17 +151,10 @@ Future<void> _pickImageAndNavigate(
                               
                           child: InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(builder: (_) => const AddReminderPage()),
-                              // );
-                              NotiService().scheduleNotification(
-                                title: "Yosef",
-                                body: "I hate flutter",
-                                hour: 20,
-                                minute: 48,
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (_) => const AddReminderPage()),
                               );
-                              
                             },
                             child: Ink.image(
                               image: const AssetImage('assets/plus.jpg'),
