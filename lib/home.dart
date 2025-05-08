@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:greengath/add_reminder.dart';
 import 'package:greengath/disease_detection.dart';
 import 'package:greengath/noti_service.dart';
 import 'package:greengath/reminder_list.dart';
