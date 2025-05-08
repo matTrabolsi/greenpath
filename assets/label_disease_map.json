@@ -1,0 +1,155 @@
+{
+    "0": {
+      "name": "🍏 Apple Scab",
+      "description": "Apple Scab causes dark lesions on fruit and leaves. Remove affected leaves and apply fungicide regularly."
+    },
+    "1": {
+      "name": "🍎 Apple Black Rot",
+      "description": "Black Rot creates dark, sunken spots. Prune affected branches and use fungicide to prevent spread."
+    },
+    "2": {
+      "name": "🌳 Apple Cedar Rust",
+      "description": "Orange rust spots appear on leaves. Remove infected leaves and apply fungicide early in the season."
+    },
+    "3": {
+      "name": "🍏 Apple Healthy",
+      "description": "Tree shows no signs of disease. Keep it healthy with regular care and pruning."
+    },
+    "4": {
+      "name": "🫐 Blueberry Healthy",
+      "description": "Lush leaves and plump berries indicate health. Ensure proper watering and pruning."
+    },
+    "5": {
+      "name": "🍒 Cherry Powdery Mildew",
+      "description": "White, powdery spots on leaves. Prune affected areas and apply fungicide."
+    },
+    "6": {
+      "name": "🍒 Cherry Healthy",
+      "description": "Green leaves and juicy cherries. Water regularly and protect from pests."
+    },
+    "7": {
+      "name": "🌽 Corn Cercospora Leaf Spot",
+      "description": "Dark circular spots on leaves. Use fungicide and remove infected foliage."
+    },
+    "8": {
+      "name": "🌽 Corn Common Rust",
+      "description": "Reddish pustules appear on leaves. Fungicides can help in wet conditions."
+    },
+    "9": {
+      "name": "🌽 Corn Northern Leaf Blight",
+      "description": "Long gray lesions appear on leaves. Plant resistant varieties and remove infected parts."
+    },
+    "10": {
+      "name": "🌽 Corn Healthy",
+      "description": "Tall stalks and green leaves. Provide proper spacing and nutrients."
+    },
+    "11": {
+      "name": "🍇 Grape Black Rot",
+      "description": "Black, rotting spots on grapes. Remove and destroy affected grapes. Apply fungicide."
+    },
+    "12": {
+      "name": "🍇 Grape Esca (Black Measles)",
+      "description": "Dark streaks appear on stems. Avoid overwatering and prune infected parts."
+    },
+    "13": {
+      "name": "🍇 Grape Leaf Blight",
+      "description": "Dark spots on grape leaves. Prune infected areas and apply fungicide."
+    },
+    "14": {
+      "name": "🍇 Grape Healthy",
+      "description": "Healthy clusters with green leaves. Maintain sunlight and air circulation."
+    },
+    "15": {
+      "name": "🍊 Citrus Greening (HLB)",
+      "description": "Yellowing leaves and bitter fruit. No cure—control psyllids and remove infected trees."
+    },
+    "16": {
+      "name": "🍑 Peach Bacterial Spot",
+      "description": "Black spots on leaves and fruit. Apply copper fungicide and prune infected branches."
+    },
+    "17": {
+      "name": "🍑 Peach Healthy",
+      "description": "Plump peaches and green leaves. Regular pruning and watering help maintain health."
+    },
+    "18": {
+      "name": "🌶️ Pepper Bacterial Spot",
+      "description": "Dark lesions on leaves and stems. Use copper sprays and avoid overhead watering."
+    },
+    "19": {
+      "name": "🌶️ Pepper Healthy",
+      "description": "Firm peppers and vibrant leaves. Ensure good drainage and full sunlight."
+    },
+    "20": {
+      "name": "🥔 Potato Early Blight",
+      "description": "Dark concentric spots on leaves. Use fungicide and remove infected leaves."
+    },
+    "21": {
+      "name": "🥔 Potato Late Blight",
+      "description": "Rapid decay of leaves and tubers. Destroy infected plants and apply fungicide immediately."
+    },
+    "22": {
+      "name": "🥔 Potato Healthy",
+      "description": "Strong green leaves and firm tubers. Proper soil care ensures plant health."
+    },
+    "23": {
+      "name": "🍓 Raspberry Healthy",
+      "description": "Healthy raspberries with no discoloration. Maintain airflow and remove dead canes."
+    },
+    "24": {
+      "name": "🌱 Soybean Healthy",
+      "description": "Green pods and uniform growth. Control pests and use balanced fertilization."
+    },
+    "25": {
+      "name": "🎃 Squash Powdery Mildew",
+      "description": "White powder on leaves. Improve airflow and apply fungicides."
+    },
+    "26": {
+      "name": "🍓 Strawberry Leaf Scorch",
+      "description": "Browning leaf edges and dried tips. Water consistently and remove infected leaves."
+    },
+    "27": {
+      "name": "🍓 Strawberry Healthy",
+      "description": "Bright leaves and sweet fruit. Keep soil moist and weed-free."
+    },
+    "28": {
+      "name": "🍅 Tomato Bacterial Spot",
+      "description": "Dark, water-soaked leaf spots. Apply copper sprays and remove affected parts."
+    },
+    "29": {
+      "name": "🍅 Tomato Early Blight",
+      "description": "Concentric brown spots on lower leaves. Use fungicides and practice crop rotation."
+    },
+    "30": {
+      "name": "🍅 Tomato Late Blight",
+      "description": "Fast-spreading leaf and fruit rot. Remove infected plants immediately and apply fungicide."
+    },
+    "31": {
+      "name": "🍅 Tomato Leaf Mold",
+      "description": "Yellowing with moldy spots. Reduce humidity and apply sulfur-based sprays."
+    },
+    "32": {
+      "name": "🍅 Tomato Septoria Leaf Spot",
+      "description": "Tiny brown spots with light centers. Remove infected leaves and use fungicides."
+    },
+    "33": {
+      "name": "🍅🕷️ Tomato Spider Mites",
+      "description": "Yellow specks and webbing on leaves. Use miticides and rinse with water."
+    },
+    "34": {
+      "name": "🍅 Tomato Target Spot",
+      "description": "Bullseye-pattern spots on leaves. Apply fungicides and remove infected foliage."
+    },
+    "35": {
+      "name": "🍅 Tomato Yellow Leaf Curl Virus",
+      "description": "Yellow, curled leaves. Control whiteflies and remove infected plants."
+    },
+    "36": {
+      "name": "🍅 Tomato Mosaic Virus",
+      "description": "Mottled, distorted leaves. No cure—remove infected plants and sterilize tools."
+    },
+    "37": {
+      "name": "🍅 Tomato Healthy",
+      "description": "Vibrant leaves and firm fruit. Provide nutrients, sun, and water consistently."
+    }
+  }
+  

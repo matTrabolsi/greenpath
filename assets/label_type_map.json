@@ -1,0 +1,47 @@
+{
+    "0": {
+      "name": "Apple Tree 🌳",
+      "description": "A deciduous tree known for producing apples. Grows in temperate climates with vibrant spring blossoms 🌸 and fruits in late summer to fall 🍂."
+    },
+    "1": {
+      "name": "Blueberry Bush 🌿",
+      "description": "A shrub that bears clusters of blueberries. Blossoms in spring 🌸 and fruits in early to mid-summer ☀️."
+    },
+    "2": {
+      "name": "Cherry Tree 🌸",
+      "description": "A flowering tree that produces cherries. Known for stunning spring blossoms 🌸 and fruits in late spring to early summer ☀️."
+    },
+    "3": {
+      "name": "Corn Plant 🌽",
+      "description": "A tall annual grass grown in summer ☀️. Planted in late spring 🌱 and harvested in late summer to early fall 🍂."
+    },
+    "4": {
+      "name": "Grape Vine 🍇",
+      "description": "A climbing plant that fruits in late summer to early fall 🍇🍂. Requires full sun ☀️ and grows actively through spring and summer 🌱☀️."
+    },
+    "5": {
+      "name": "Peach Tree 🍑",
+      "description": "A deciduous tree blooming in early spring 🌸 and producing fruit in summer ☀️."
+    },
+    "6": {
+      "name": "Pepper Plant 🌶️",
+      "description": "A warm-weather plant. Planted in late spring 🌱 and harvested in summer to early fall ☀️🍂."
+    },
+    "7": {
+      "name": "Soybean Plant 🌱",
+      "description": "Planted in late spring 🌱 and harvested in late summer to early fall 🍂."
+    },
+    "8": {
+      "name": "Strawberry Plant 🍓",
+      "description": "Blooms in spring 🌸 and bears fruit in late spring to early summer ☀️."
+    },
+    "9": {
+      "name": "Tomato Plant 🍅",
+      "description": "A sun-loving plant. Planted in spring 🌱 and harvested in summer ☀️."
+    },
+    "10": {
+      "name": "Random Object ❓",
+      "description": "This image does not match any known plant class. Please ensure the photo is of a plant or tree."
+    }
+  }
+  
