@@ -155,10 +155,11 @@ Future<void> _pickImageAndNavigate(
                               //   context,
                               //   MaterialPageRoute(builder: (_) => const AddReminderPage()),
                               // );
-                              NotiService().showNotification(
-                                id: 22,
+                              NotiService().scheduleNotification(
                                 title: "Yosef",
                                 body: "I hate flutter",
+                                hour: 20,
+                                minute: 48,
                               );
                               
                             },

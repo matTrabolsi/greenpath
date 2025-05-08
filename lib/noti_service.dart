@@ -93,11 +93,12 @@ class NotiService {
       body, 
       scheduledDate, 
       notificationDetails(), 
-
+      
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
 
       matchDateTimeComponents: DateTimeComponents.time,
       );
+      print(scheduledDate);
   }
 
   Future<void> cancelAllNotification() async{
