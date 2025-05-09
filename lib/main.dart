@@ -7,6 +7,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   NotiService().initNotification();
+  NotiService().requestPermissions();
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,

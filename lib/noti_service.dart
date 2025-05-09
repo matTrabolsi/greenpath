@@ -2,6 +2,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:flutter_timezone/flutter_timezone.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class NotiService {
   final notificationsPlugin = FlutterLocalNotificationsPlugin();
@@ -9,6 +10,14 @@ class NotiService {
   bool _isInitialized = false;
 
   bool get isInitialized => _isInitialized;
+
+
+  Future<void> requestPermissions() async {
+  final status = await Permission.notification.request();
+  if (status.isDenied || status.isPermanentlyDenied) {
+    // handle user denying the permission
+  }
+}
 
   // INTIALIZE
   Future<void> initNotification() async {

@@ -35,7 +35,7 @@ class _ReminderListPageState extends State<ReminderListPage> {
 
   Future<void> deleteReminder(int index) async {
   final reminderId = _reminders[index].id; // Get the correct ID
-  await NotiService().notificationsPlugin.cancel(reminderId); // Cancel the notification
+// Cancel the notification
 
   final prefs = await SharedPreferences.getInstance();
 
@@ -44,7 +44,7 @@ class _ReminderListPageState extends State<ReminderListPage> {
   // Update saved list
   final remindersJson = _reminders.map((r) => jsonEncode(r.toMap())).toList();
   await prefs.setStringList('reminders', remindersJson);
-
+  await NotiService().notificationsPlugin.cancel(reminderId); 
   setState(() {}); // Refresh the UI
 }
 

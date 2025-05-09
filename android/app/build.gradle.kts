@@ -17,6 +17,8 @@ android {
     }
     dependencies {
         coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+        implementation("org.tensorflow:tensorflow-lite:+")
+        implementation("org.tensorflow:tensorflow-lite-gpu:+")
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
