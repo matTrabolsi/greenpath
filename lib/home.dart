@@ -22,7 +22,7 @@ Future<void> _pickImageAndNavigate(
     BuildContext context, Widget Function(File) pageBuilder) async {
   setState(() => _isLoading = true);
 
-  final pickedFile = await ImagePicker().pickImage(source: ImageSource.gallery);
+  final pickedFile = await ImagePicker().pickImage(source: ImageSource.camera);
 
   if (pickedFile != null) {
     // Wait for 1 second before navigating (simulate processing)

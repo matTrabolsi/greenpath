@@ -6,7 +6,7 @@ import 'package:greengath/reminder_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ReminderListPage extends StatefulWidget {
-  const ReminderListPage({Key? key}) : super(key: key);
+  const ReminderListPage({super.key});
 
   @override
   _ReminderListPageState createState() => _ReminderListPageState();

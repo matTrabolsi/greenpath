@@ -10,6 +10,7 @@ class ChatBotPage extends StatefulWidget {
   const ChatBotPage({super.key, this.initialMessage});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ChatBotPageState createState() => _ChatBotPageState();
 }
 
@@ -45,6 +46,7 @@ class _ChatBotPageState extends State<ChatBotPage> {
       setState(() {
          _chatHistory.add("Bot: Error: $e");
         _response = "Error: $e";
+        // ignore: avoid_print
         print(_response);
       });
     } finally {
@@ -78,7 +80,7 @@ void initState() {
     } catch (e) {
       setState(() {
         _response = "Error: $e";
-        print(_response);
+        // print(_response);
       });
     } finally {
       setState(() {
@@ -164,6 +166,7 @@ void initState() {
                   minLines: 1,
                   maxLines: 5,
                   decoration: InputDecoration(
+                    // ignore: deprecated_member_use
                     fillColor: Colors.grey.shade400.withOpacity(0.2),
                     filled: true,
                     contentPadding: EdgeInsets.all(8),
@@ -173,6 +176,7 @@ void initState() {
                     ),
                     hintText: 'Ask a question...',
                     hintStyle: TextStyle(
+                      // ignore: deprecated_member_use
                       color: Colors.grey.shade400.withOpacity(0.9),
                       fontSize: 14,
                     ),

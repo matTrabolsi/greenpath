@@ -92,10 +92,10 @@ Future<void> _deleteTempImage() async {
       }
 
       // Resize to 100x100
-      img.Image resizedImage = img.copyResize(image, width: 100, height: 100);
+      img.Image resizedImage = img.copyResize(image, width: 224, height: 224);
 
       // Normalize pixel values and prepare input
-      var input = List.generate(1, (_) => List.generate(100, (y) => List.generate(100, (x) {
+      var input = List.generate(1, (_) => List.generate(224, (y) => List.generate(224, (x) {
       var pixel = resizedImage.getPixel(x, y); // This is a PixelUint8, not an int
       return [
         pixel.r / 255.0, // Red component normalized
