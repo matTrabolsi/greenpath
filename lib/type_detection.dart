@@ -90,48 +90,32 @@ Future<void> _deleteTempImage() async {
         return;
       }
 
-      // Resize to 100x100
       img.Image resizedImage = img.copyResize(image, width: 224, height: 224);
-
-      // Normalize pixel values and prepare input
+    
       var input = List.generate(1, (_) => List.generate(224, (y) => List.generate(224, (x) {
-      var pixel = resizedImage.getPixel(x, y); // This is a PixelUint8, not an int
+      var pixel = resizedImage.getPixel(x, y); 
       return [
-        pixel.r / 255.0, // Red component normalized
-        pixel.g / 255.0, // Green component normalized
-        pixel.b / 255.0  // Blue component normalized
+        pixel.r / 255.0,
+        pixel.g / 255.0,
+        pixel.b / 255.0  
       ];
     })));
 
-
-      // Output: 10 classes
       var output = List.filled(11, 0.0).reshape([1, 11]);
 
-      // Run inference
       _interpreter.run(input, output);
 
-      // Get predicted index
       List<double> probabilities = List<double>.from(output[0]);
-      // Find the max probability and its index
       int predictedIndex = 0;
       double maxProbability = probabilities[0];
 
       for (int i = 0; i < probabilities.length; i++) {
         double prob = probabilities[i];
-        // print('Class $i: ${_labelMap[i]?['name'] ?? 'Unknown'} → Confidence: ${prob.toStringAsFixed(4)}');
-
         if (prob > maxProbability) {
           maxProbability = prob;
           predictedIndex = i;
         }
       }
-
-
-      // If confidence is too low, assign index 11 (e.g., Unknown)
-      // if (maxProbability < 0.75) {
-      //   print("⚠️ Low confidence! Assigning index 10 for unknown.");
-      //   predictedIndex = 10;
-      // }
 
       setState(() {
         _predictionResultDescription = _labelMap[predictedIndex]?['description']?? "Unknown";
@@ -163,7 +147,7 @@ body: _isLoading
               padding: const EdgeInsets.all(16),
               child: Stack(
                 children: [
-                  // Full-width image with rounded corners ONLY on image
+       
                   ClipRRect(
                     borderRadius: BorderRadius.circular(16),
                     child: Image.file(
@@ -174,7 +158,6 @@ body: _isLoading
                     ),
                   ),
 
-                  // Bottom-center result name on top of image
                   Positioned(
                     bottom: 6,
                     left: 0,
