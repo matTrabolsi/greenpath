@@ -50,10 +50,9 @@ Future<void> _deleteTempImage() async {
   try {
     if (widget.imageFile.existsSync()) {
       await widget.imageFile.delete();
-      print("🗑️ Temp image file deleted in dispose().");
     }
   } catch (e) {
-    print("⚠️ Failed to delete image in dispose(): $e");
+    // print("Failed to delete image in dispose(): $e");
   }
 }
 
@@ -62,18 +61,18 @@ Future<void> _deleteTempImage() async {
       final String jsonString = await rootBundle.loadString('assets/label_disease_map.json');
       final Map<String, dynamic> jsonMap = json.decode(jsonString);
       _labelMap = jsonMap.map((key, value) => MapEntry(int.parse(key), Map<String, String>.from(value))); 
-      print("label map loaded.");
+
     } catch (e) {
-      print("failed to load label map: $e");
+      // print("failed to load label map: $e");
     }
   }
   Future<void> _loadModel() async {
     try {
       _interpreter = await Interpreter.fromAsset('assets/plant_disease_model.tflite');
       _modelLoaded = true;
-      print("✅ Model loaded successfully.");
+
     } catch (e) {
-      print("❌ Failed to load model: $e");
+      // print("Failed to load model: $e");
     }
 
   }
@@ -115,7 +114,7 @@ Future<void> _deleteTempImage() async {
       
     });
     } catch(e){
-      print("Error during model execution: $e");
+      // print("Error during model execution: $e");
       setState(() {
         _predictionResultName = "Model execution failed.";
       });
@@ -157,6 +156,7 @@ body: _isLoading
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                         decoration: BoxDecoration(
+                          // ignore: deprecated_member_use
                           color: Colors.grey.shade200.withOpacity(0.8),
                           borderRadius: BorderRadius.circular(12),
                         ),

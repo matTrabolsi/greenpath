@@ -19,7 +19,8 @@ class _AddReminderPageState extends State<AddReminderPage> {
   TimeOfDay _selectedTime = TimeOfDay.now();
   bool _isDaily = false;
   final List<bool> _selectedDays = List.filled(7, false); // One entry for each day of the week
-
+  bool _isSaving = false;
+  
   @override
   void dispose() {
     _titleController.dispose();
@@ -46,7 +47,7 @@ class _AddReminderPageState extends State<AddReminderPage> {
     remindersJson.add(reminderMap);
 
     await prefs.setStringList('reminders', remindersJson);
-    print(reminder.time.hour);
+    // print(reminder.time.hour);
     NotiService().scheduleNotification(
       id: reminder.id,
       title: "Green Path",
@@ -67,7 +68,7 @@ class _AddReminderPageState extends State<AddReminderPage> {
     return days;
   }
 
-  bool _isSaving = false;
+
 
   void _saveReminder() {
     if (_isSaving) return;

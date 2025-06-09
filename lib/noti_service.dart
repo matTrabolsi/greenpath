@@ -60,20 +60,6 @@ class NotiService {
   }
 
 
-  // SHOW NOTIFICATION
-//   Future<void> showNotification({
-//   int id = 0,
-//   String? title,
-//   String? body,
-// }) async {
-  
-//   return notificationsPlugin.show(
-//     id,
-//     title,
-//     body,
-//     notificationDetails(), 
-//   );
-// }
 
 tz.TZDateTime _nextInstanceOfTime(int hour, int minute) {
   final now = tz.TZDateTime.now(tz.local);

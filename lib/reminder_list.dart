@@ -9,6 +9,7 @@ class ReminderListPage extends StatefulWidget {
   const ReminderListPage({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ReminderListPageState createState() => _ReminderListPageState();
 }
 

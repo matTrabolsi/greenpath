@@ -31,6 +31,7 @@ Future<void> _pickImageAndNavigate(
     setState(() => _isLoading = false);
 
     Navigator.push(
+      // ignore: use_build_context_synchronously
       context,
       PageRouteBuilder(
 
@@ -42,7 +43,7 @@ Future<void> _pickImageAndNavigate(
     );
   } else {
     setState(() => _isLoading = false);
-    print("No image selected.");
+    // print("No image selected.");
   }
 }
 

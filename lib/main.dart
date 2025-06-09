@@ -19,6 +19,7 @@ void main() {
     ),
     textSelectionTheme: TextSelectionThemeData(
       cursorColor: Colors.green, // blinking cursor color
+      // ignore: deprecated_member_use
       selectionColor: Colors.green.withOpacity(0.3), // highlight color
       selectionHandleColor: Colors.green, // the small circle
     ),
