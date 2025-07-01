@@ -2,6 +2,8 @@
 
 GreenPath is a mobile application that uses artificial intelligence to help users identify plants, diagnose plant diseases, get expert advice, and receive personalized watering reminders. Whether you're a plant enthusiast, a home gardener, or an outdoor adventurer, GreenPath is your go-to app for reliable, accessible, and efficient plant care.
 
+![APP Preview](GREENPATH.png)
+
 ---
 
 ## 🚀 Features
